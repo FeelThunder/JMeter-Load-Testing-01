@@ -10,10 +10,10 @@
 
 ## Content 
 ### Command Used
-jmeter.bat
-jmeter -n -t 03_start.jmx
-jmeter -n -t 03_start.jmx -l demoresult.jtl
-jmeter -n -t 04_start.jmx -l demoresult2.jtl -e -o demoresults
+- jmeter.bat
+- jmeter -n -t 03_start.jmx
+- jmeter -n -t 03_start.jmx -l demoresult.jtl
+- jmeter -n -t 04_start.jmx -l demoresult2.jtl -e -o demoresults
  
 ### Plug in used
 * 3 Basic Graphs	
@@ -29,8 +29,8 @@ Applying simulated load to a system and measuring the overall impact on the syst
 * Can run multiple thread groups in one test 
 
 ### Sampler
-Actions for users (threads) to perform 
-Samplers within JMeter
+Actions for users (threads) to perform  
+Samplers within JMeter  
 * HTTP Sampler	
 * TCP Sampler
 * LDAP Request
@@ -42,35 +42,34 @@ Samplers within JMeter
 * OS Process Sampler
 
 ### Listener
-Displaying the results of a test as it's running
-note: for larger tests, this isn't recommended, because displaying the output live during the load test can use a lot of system resources
-note : Listeners let you visualize data from your load test, but the JMeter built-in listeners sometimes aren't enough. 
-note : The plugins can be used during the test, however that does use a lot of resources, so it's usually better to graph the data after the test is finished.
+Displaying the results of a test as it's running    
+note: for larger tests, this isn't recommended, because displaying the output live during the load test can use a lot of system resources.      
+note : Listeners let you visualize data from your load test, but the JMeter built-in listeners sometimes aren't enough.     
+note : The plugins can be used during the test, however that does use a lot of resources, so it's usually better to graph the data after the test is finished.    
 
 ### Timers 
-* Help introduce randomness to the test 
-* Space out actions to combat congestion 
-* Allow business logic to occur during test 
+* Help introduce randomness to the test. 
+* Space out actions to combat congestion. 
+* Allow business logic to occur during test. 
 
 ### Running  load test through the CLI
-The CLI is the purest way of running a load test.
+The CLI is the purest way of running a load test.  
 
-GUI
+GUI  
 * Great for creating/debugging tests 
 * Uses more system resources when running tests 
-CLI
+CLI  
 * Great for running the load tests 
 * Uses less system resources to run tests 
 * Allows for distribution of tests 
 
-Parameters in command line 
+Parameters in command line   
 * -n : switch runs in non-GUI mode
 * -t : switch specifies the test file
-Saving CLI results to a .jtl file
+Saving CLI results to a .jtl file  
 * -l for our testing report.
-Importing a .jtl file to JMeter graphs
-I've use jp@gc response codes per second and browse .jtl file
-and got this results
-Creating an HTML dashboard at CLI runtime
-* - e will tell JMeter to perform any action following it only after the test has completed
-* - o followed by a name to create dashboard folder
+Importing a .jtl file to JMeter graphs  
+I've used jp@gc response codes per second and browse .jtl file  
+Creating an HTML dashboard at CLI runtime  
+* - e will tell JMeter to perform any action following it only after the test has completed  
+* - o followed by a name to create dashboard folder  
