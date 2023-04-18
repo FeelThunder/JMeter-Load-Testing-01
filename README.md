@@ -15,7 +15,7 @@
 - jmeter -n -t 03_start.jmx -l demoresult.jtl
 - jmeter -n -t 04_start.jmx -l demoresult2.jtl -e -o demoresults
  
-### Plug in used
+### Plug In Used
 * 3 Basic Graphs	
 * 5 Additional Graphs
 
@@ -43,7 +43,7 @@ Samplers within JMeter
 
 ### Listener
 Displaying the results of a test as it's running    
-note: for larger tests, this isn't recommended, because displaying the output live during the load test can use a lot of system resources.      
+note : for larger tests, this isn't recommended, because displaying the output live during the load test can use a lot of system resources.      
 note : Listeners let you visualize data from your load test, but the JMeter built-in listeners sometimes aren't enough.     
 note : The plugins can be used during the test, however that does use a lot of resources, so it's usually better to graph the data after the test is finished.    
 
@@ -63,13 +63,16 @@ CLI
 * Uses less system resources to run tests 
 * Allows for distribution of tests 
 
-Parameters in command line   
-* -n : switch runs in non-GUI mode
-* -t : switch specifies the test file
+Parameters in command line  
+* -n : switch runs in non-GUI mode  
+* -t : switch specifies the test file  
+
 Saving CLI results to a .jtl file  
-* -l for our testing report.
+* -l for our testing report.  
+
 Importing a .jtl file to JMeter graphs  
-I've used jp@gc response codes per second and browse .jtl file  
+- I've used jp@gc response codes per second and browse .jtl file  
+
 Creating an HTML dashboard at CLI runtime  
-* - e will tell JMeter to perform any action following it only after the test has completed  
-* - o followed by a name to create dashboard folder  
+* -e will tell JMeter to perform any action following it only after the test has completed  
+* -o followed by a name to create dashboard folder  
